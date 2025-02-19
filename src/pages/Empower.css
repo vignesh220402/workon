@@ -1,0 +1,56 @@
+.main-emp{
+    display:flex;
+    margin: 80px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: rgba(169, 164, 164, 0.204);
+}
+.insert{
+    width: 300px;
+    height:300px;
+    position: relative;
+    left: 250px;
+}
+.main-e{
+    width: 600px;
+}
+.main-e h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.main-e p{
+    font-size: 20px;
+}
+.empbtn{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 180px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+.empbtn:hover{
+    background-color: white;
+    color: #000;
+    border: solid white 2px;
+}
+@media (max-width: 768px){
+    .insert{
+       left: -50px;
+    }
+    .main-e h1{
+        font-size: 30px;
+        font-weight: 500;
+        
+    }
+    .main-emp{
+        padding: 50px;
+        margin: 50px;
+        text-align: center;
+    }
+}

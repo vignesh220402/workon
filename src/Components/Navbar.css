@@ -1,0 +1,153 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  gap: 0.5rem; /* Adjust the gap between the logo and text */
+}
+
+.navbar-logo img {
+  height: 70px; /* Increased height */
+  width: 70px; /* Increased width */
+  border-radius: 50%; /* Makes the logo circular */
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.contact-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 15px;
+  width: 180px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 20px;
+  border: solid black 2px;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hamburger menu button */
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff; /* Default color for the hamburger menu icon */
+  z-index: 1000; /* Ensure the hamburger menu stays on top of other elements */
+}
+
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff; /* Default background color */
+    align-items: center; /* Center the links horizontally */
+  }
+
+  .navbar-links-container.open {
+    display: flex;
+    background-color: #000; /* Change background color to black when open */
+    position: fixed; /* Ensure it covers the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* Center the links vertically */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-links a {
+    color: #fff; /* Change text color to white for better contrast */
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+    color: #000; /* Default color for the hamburger menu icon */
+    z-index: 1000; /* Ensure the hamburger menu stays on top of other elements */
+  }
+
+  /* Ensure cancel mark is white when menu is open */
+  .navbar-links-container.open .hamburger-menu {
+    color: #fff; /* Change cancel mark color to white */
+  }
+
+  .contact-button {
+    margin-left: 70px;
+    background-color: white;
+    color: black;
+  }
+
+  body {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+/* Body menu-open styles */
+body.menu-open {
+  background-color: #000; /* Change body background color to black */
+  color: #fff; /* Change text color to white for better contrast */
+  overflow: hidden; /* Prevent scrolling when menu is open */
+}

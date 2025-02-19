@@ -1,0 +1,149 @@
+.main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.img4 h4{
+    color: black;
+}
+.img2,
+.img3,
+.img4,
+.img1 {
+    position: relative;
+    padding: 30px;
+    margin: 40px;
+    width: 440px;
+    display: flex;
+    border-radius: 30px;
+    border-bottom: solid black 5px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    background-color: black;
+    color: white;
+}
+
+.img1 {
+    background-color: white;
+    color: black;
+}
+
+.img2 img {
+    margin-left: 80px;
+}
+
+.img3 img {
+    margin-left: 20px;
+}
+
+.img4 img {
+    margin-left: 50px;
+}
+
+.img1 a,
+.img2 a,
+.img3 a,
+.img4 a {
+    position: absolute;
+    text-decoration: none;
+    top: 80%;
+    left: 50px;
+}
+
+.img1 a {
+    color: rgb(0, 0, 0);
+}
+
+.img2 a,
+.img3 a {
+    color: white;
+}
+
+.img4 a {
+    color: rgb(0, 0, 0);
+}
+.img4 {
+    background-color: white;
+}
+
+
+.serviceintro  {
+    text-align: center;
+    font-size: 18px;
+}
+.serviceintro .h1tag{
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .serviceintro {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .serviceintro h1 {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .serviceintro p {
+        font-size: 16px;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img1 img {
+        width: 150px;
+        height: 150px;
+    }
+    .h1tag{
+        text-align: center;
+    }
+    .serviceintro p{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img1 img {
+        margin-left: 0;
+        width: 100px;
+        height: 100px;
+    }
+   
+}
