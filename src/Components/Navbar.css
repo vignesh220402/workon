@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   position: sticky;
   top: 0px;
   z-index: 1000;
@@ -139,7 +139,10 @@ h3 {
     color: black;
   }
 
-
+  body {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }
 
 /* Body menu-open styles */
