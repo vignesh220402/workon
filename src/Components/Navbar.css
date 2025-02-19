@@ -1,153 +1,125 @@
-/* Navbar container */
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ffffff;
-  position: sticky;
-  top: 0px;
-  z-index: 1000;
+  background-color:rgb(255, 255, 255);
+  padding: 10px 20px;
+  position: relative;
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
-  border-radius: 50px;
-  gap: 0.5rem; /* Adjust the gap between the logo and text */
 }
 
 .navbar-logo img {
-  height: 70px; /* Increased height */
-  width: 70px; /* Increased width */
-  border-radius: 50%; /* Makes the logo circular */
+  max-width: 50px;
+  margin-right: 10px;
 }
 
-h3 {
-  font-weight: 900;
-  font-size: 20px;
-  letter-spacing: -1px;
-  margin: 0;
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #000000;
+  cursor: pointer;
 }
 
 .navbar-links-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .navbar-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-links li {
-  display: inline;
+  margin: 0 15px;
 }
 
 .navbar-links a {
+  color: #ffffff;
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: 550;
+  font-size: 1.2rem;
 }
-
+.navbar-links a:hover{
+  transform: translateY(5px);
+  transition: 2s;
+}
 .contact-button {
+  margin-left: 20px;
+  padding: 10px 20px;
   background-color: #ffffff;
   color: #000000;
-  border: none;
-  padding: 15px;
-  width: 180px;
-  cursor: pointer;
-  text-align: center;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
-  font-size: 20px;
-  border: solid black 2px;
+  border-radius: 5px;
 }
 
 .contact-button:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
-/* Hamburger menu button */
-.hamburger-menu {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #ffffff; /* Default color for the hamburger menu icon */
-  z-index: 1000; /* Ensure the hamburger menu stays on top of other elements */
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
   .navbar-links-container {
     display: none;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
     width: 100%;
-    background-color: #fff; /* Default background color */
-    align-items: center; /* Center the links horizontally */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .navbar-links-container.open {
     display: flex;
-    background-color: #000; /* Change background color to black when open */
-    position: fixed; /* Ensure it covers the entire screen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center; /* Center the links vertically */
   }
 
   .navbar-links {
     flex-direction: column;
-    width: 100%;
   }
 
   .navbar-links li {
-    display: block;
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-
-  .navbar-links a {
-    color: #fff; /* Change text color to white for better contrast */
-    text-align: center;
-  }
-
-  .hamburger-menu {
-    display: block;
-    color: #000; /* Default color for the hamburger menu icon */
-    z-index: 1000; /* Ensure the hamburger menu stays on top of other elements */
-  }
-
-  /* Ensure cancel mark is white when menu is open */
-  .navbar-links-container.open .hamburger-menu {
-    color: #fff; /* Change cancel mark color to white */
+    margin: 10px 0;
   }
 
   .contact-button {
-    margin-left: 70px;
-    background-color: white;
-    color: black;
-  }
-
-  body {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 
-/* Body menu-open styles */
-body.menu-open {
-  background-color: #000; /* Change body background color to black */
-  color: #fff; /* Change text color to white for better contrast */
-  overflow: hidden; /* Prevent scrolling when menu is open */
+@media (min-width: 769px) {
+  .navbar-links-container {
+    display: flex !important;
+  }
+
+  .navbar-links-container.open {
+    display: flex !important;
+  }
 }

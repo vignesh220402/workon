@@ -10,6 +10,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     if (menuOpen) {
       document.body.classList.add('menu-open');
@@ -30,13 +34,13 @@ const Navbar = () => {
         </button>
         <div id="anchor" className={`navbar-links-container ${menuOpen ? 'open' : ''}`}>
           <ul className="navbar-links">
-            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-            <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-            <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
-            <li><Link to="/Blog" onClick={toggleMenu}>Blog</Link></li>
-            <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+            <li><Link to="/Blog" onClick={closeMenu}>Blog</Link></li>
+            <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
           </ul>
-          <Link to="/contact" className="contact-button" onClick={toggleMenu}>Contact Us</Link>
+          <Link to="/contact" className="contact-button" onClick={closeMenu}>Contact Us</Link>
         </div>
       </nav>
     </div>
