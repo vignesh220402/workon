@@ -6,10 +6,10 @@ import './Casestudy.css';
 const CaseStudy = () => {
     return (
         <>
-        <div className="topic">
-        <h1>Case study</h1>
-        <p>At Marketing Mastery Online, we believe in showcasing real-world results to demonstrate the effectiveness of our strategies.</p>
-        </div>
+            <div className="topic">
+                <h1>Case study</h1>
+                <p>At Marketing Mastery Online, we believe in showcasing real-world results to <br /> demonstrate the effectiveness of our strategies.</p>
+            </div>
             <div className="case-study">
                 <div className="case-study-section">
                     <p>EcoTrends approached us with several challenges, including low website traffic, stagnant sales, and limited brand visibility in a crowded market.</p>

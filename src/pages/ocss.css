@@ -1,39 +1,72 @@
+/* General Styles */
 .main-img {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 
-.img1 img,
-.img2 img,
-.img3 img,
-.img4 img {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
+.firsttwo, .secondtwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.img4 h4{
+
+.dark-arrow {
+    background-color: white;
+    color: black;
+    padding: 8.5px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.img2, .img3 {
+    color: white;
+    background-color: black;
+}
+
+.titles h4 {
+    font-weight: 500;
+}
+
+.img1 img, .img2 img, .img3 img, .img4 img {
+    width: 240px;
+    height: 240px;
+    margin: 5px;
+    position: relative;
+}
+
+.img4 h4 {
     color: black;
 }
-.img2,
-.img3,
-.img4,
-.img1 {
+
+.img4 {
+    background-color: white;
+}
+
+.linkage {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    text-decoration: none;
+}
+
+.img1, .img2, .img3, .img4 {
     position: relative;
-    padding: 30px;
-    margin: 40px;
-    width: 440px;
+    padding: 50px;
+    margin: 15px;
+    width: 100%; /* Ensure full width on smaller screens */
+    max-width: 480px; /* Limit width on larger screens */
+    height: auto; /* Maintain aspect ratio */
     display: flex;
     border-radius: 30px;
     border-bottom: solid black 5px;
     border-left: solid black 1px;
     border-right: solid black 1px;
     border-top: solid black 1px;
-    background-color: black;
-    color: white;
 }
 
 .img1 {
@@ -41,109 +74,77 @@
     color: black;
 }
 
-.img2 img {
-    margin-left: 80px;
+.img2 img, .img3 img {
+    margin-left: 0px;
 }
 
-.img3 img {
-    margin-left: 20px;
+.img1 h4 {
+    font-size: 26px;
+    bottom: 30px;
+    position: relative;
 }
 
-.img4 img {
-    margin-left: 50px;
+.serviceintro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 }
 
-.img1 a,
-.img2 a,
-.img3 a,
-.img4 a {
-    position: absolute;
-    text-decoration: none;
-    top: 80%;
-    left: 50px;
+.titles {
+    position: relative;
+    max-width: 100%; /* Ensure full width on smaller screens */
 }
 
-.img1 a {
-    color: rgb(0, 0, 0);
+.serviceintro .h1tag {
+    font-size: 70px;
+    font-weight: 500;
+    color: black;
+   
 }
 
-.img2 a,
-.img3 a {
-    color: white;
+.serviceintro p {
+    font-size: 20px;
+   
 }
 
-.img4 a {
-    color: rgb(0, 0, 0);
-}
-.img4 {
-    background-color: white;
-}
-
-
-.serviceintro  {
-    text-align: center;
-    font-size: 18px;
-}
-.serviceintro .h1tag{
-    font-size: 40px;
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
     .serviceintro {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Center align */
         width: 100%;
+        text-align: center;
     }
 
-    .serviceintro h1 {
+    .serviceintro .h1tag {
         font-size: 36px;
         margin-left: 0;
+        text-align: center; /* Center text */
     }
 
     .serviceintro p {
         font-size: 16px;
+        text-align: center; /* Center text */
     }
 
-    .img1,
-    .img2,
-    .img3,
-    .img4 {
-        width: 90%;
-        margin: 20px;
-    }
-
-    .img2 img,
-    .img3 img,
-    .img4 img,
-    .img1 img {
-        width: 150px;
-        height: 150px;
-    }
-    .h1tag{
-        text-align: center;
-    }
-    .serviceintro p{
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .img1,
-    .img2,
-    .img3,
-    .img4 {
+    .img1, .img2, .img3, .img4 {
+        padding: 20px;
+        margin: 10px;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%; /* Ensure full width on smaller screens */
+        max-width: none; /* Remove max width */
     }
-
-    .img2 img,
-    .img3 img,
-    .img4 img,
-    .img1 img {
-        margin-left: 0;
-        width: 100px;
-        height: 100px;
+    .img1 img, .img2 img, .img3 img, .img4 img {
+        width: 150px;
+        height:150px;
+        margin: 5px;
+        left: 30%;
+        top: -60px;
+        position: relative;
     }
-   
+    
+    
 }

@@ -7,6 +7,10 @@ import './terti.css';
 const Testimonial = () => {
     return (
         <div>
+            <div className="topic">
+                <h1>Testimonial</h1>
+                <p>At Marketing Mastery Online, we believe in showcasing real-world results to <br /> demonstrate the effectiveness of our strategies.</p>
+            </div>
             <div className="maincard">
                 <div className="card1">
                     <img src={imagec1} alt="Testimonial 1" />

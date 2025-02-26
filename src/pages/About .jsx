@@ -1,7 +1,6 @@
 
 import "./About.css";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
-import logo5 from "../assets/logo.jpg";
+
 
 const SinglePage = () => {
   return (
@@ -39,29 +38,7 @@ const SinglePage = () => {
           </div>
         </div>
       </section>
-      <footer className="footer">
-        <div className="sub-footer">
-          <div className="end-logo">
-            <img src={logo5} alt="Logo" />
-            <h3>Logoipsum</h3>
-          </div>
-          <div className="footer-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/services">Service</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-          </div>
-          <div className="footer-social-media">
-            <FaInstagram />
-            <FaFacebook />
-            <FaLinkedin />
-          </div>
-        </div>
-        <div className="footer-bottom-text">
-          <p>Designed with Codedesign.ai</p>
-        </div>
-      </footer>
+  
     </div>
   );
 };

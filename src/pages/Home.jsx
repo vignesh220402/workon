@@ -12,38 +12,37 @@ import Empower from './Empower';
 import { Link } from 'react-router-dom';
 import CaseStudy from './Casestuday';
 import Testimonial from './tertimonial';
-import End from './End';
+
 
 
 const Home = () => {
   return (
     <>
 
-    <section className="main-intro">
-      <div className="intro-content">
-        <div className="intro-text">
-          <h1>Marketing Mastery Online</h1>
-          <p>At Marketing Mastery Online, we are dedicated to helping businesses achieve unparalleled success in the digital realm. With our comprehensive suite of services, we empower you to dominate the online landscape and connect with your target audience in meaningful ways.</p>
-          <Link to="/contact" className="contacthome">Contact Us</Link>
+      <section className="main-intro">
+        <div className="intro-content">
+          <div className="intro-text">
+            <h1>Marketing Mastery Online</h1>
+            <p>At Marketing Mastery Online, we are dedicated to helping businesses achieve unparalleled success in the digital realm.With our comprehensive suite of services, we empower you to dominate the  online landscape and connect with your target audience in<br />meaningful ways.</p>
+            <Link to="/contact" className="contacthome">Contact Us</Link>
+          </div>
+          <div className="intro-image">
+            <img src={myImage} alt="Marketing" />
+          </div>
         </div>
-        <div className="intro-image">
-          <img src={myImage}alt="Marketing" />
-        </div>
-      </div>
-    </section>
-    <div className="logos">
-      <img src={logo1} alt="" />
+      </section>
+      <div className="logos">
+        <img src={logo1} alt="" />
         <img src={logo2} alt="" />
         <img src={logo3} alt="" />
         <img src={logo4} alt="" />
         <img src={logo5} alt="" />
         <img src={logo6} alt="" />
       </div>
-      <Oservices/>
-      <Empower/>
-      <CaseStudy/>
-      <Testimonial/>
-      <End/>
+      <Oservices />
+      <Empower />
+      <CaseStudy />
+      <Testimonial />
     </>
   );
 }

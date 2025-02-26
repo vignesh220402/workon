@@ -1,10 +1,10 @@
-
-
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2em 1em;
+    background-color: rgb(0, 0, 0);
     text-align: center;
+    height: 200px;
+    padding: 50px;
+    padding-top: 60px;
+
 }
 
 .sub-footer {
@@ -26,6 +26,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-right: 20px;
 }
 
 .end-logo h3 {
@@ -43,11 +44,14 @@
 .footer-links a {
     color: #fff;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: -10px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #00bcd4;
+    color: #ffff00;
 }
 
 .footer-social-media {
@@ -58,11 +62,13 @@
 .footer-social-media a {
     color: #fff;
     font-size: 1.5em;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-social-media a:hover {
-    color: #00bcd4;
+    color: #f6ff00;
+    transform: scale(1.5);
+
 }
 
 .footer-bottom-text {

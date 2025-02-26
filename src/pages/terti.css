@@ -6,10 +6,10 @@
     flex-wrap: wrap;
 }
 
-
-
+/* Style for individual cards */
 .card1 {
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* Ensures the card doesn’t get wider than 500px */
     height: 300px;
     background-color: transparent;
     margin: 5px;
@@ -20,12 +20,14 @@
 .card1:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.card1 img {
-    width: 80px;
-    height: 80px;
 
+/* Style for images inside the cards */
+.card1 img {
+    height: 60px;
+    width: 60px;
 }
 
+/* Style for text inside the cards */
 .card1 p {
     font-size: 20px;
 }
@@ -34,6 +36,7 @@
     border-radius: 50%;
 }
 
+/* Style for the face section */
 .face {
     display: flex;
     justify-content: center;
@@ -47,4 +50,35 @@
 .face p {
     font-weight: 500;
     float: left;
+}
+
+/* Responsive design: Adjusts layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .maincard {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card1 {
+        width: 90%; /* Uses most of the available width on smaller screens */
+        height: auto; /* Allows height to adjust based on content */
+        margin: 10px auto; /* Centers the cards and adds vertical spacing */
+    }
+
+    .card1 img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card1 p {
+        font-size: 18px;
+    }
+
+    .face h3 {
+        margin-left: 10px;
+    }
+
+    .face p {
+        font-size: 16px;
+    }
 }

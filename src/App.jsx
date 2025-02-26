@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import SinglePage from "./pages/About ";
 import BlogSection from "./pages/BlogSection";
 import Navbar from './Components/Navbar';
+import './App.css'
+import End from './pages/End';
 
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<SinglePage />} />
         <Route path="/Blog" element={<BlogSection />} />
       </Routes>
+      <End/>
     </Router>
   );
 }

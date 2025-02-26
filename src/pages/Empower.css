@@ -1,28 +1,42 @@
-.main-emp{
-    display:flex;
-    margin: 80px;
+.main-emp {
+    display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 32px;
+    width: 75%;
+    position: relative;
     border-radius: 40px;
+    margin-top: 200px;
+    margin-left: auto; /* Centering the container */
+    margin-right: auto; /* Centering the container */
     background-color: rgba(169, 164, 164, 0.204);
 }
-.insert{
+
+/* Style for the insert section */
+.insert {
     width: 300px;
-    height:300px;
+    height: 300px;
     position: relative;
-    left: 250px;
+    left: 100px;
 }
-.main-e{
+
+/* Style for the main-e section */
+.main-e {
     width: 600px;
+    margin-top: -20px;
 }
-.main-e h1{
-    font-size: 50px;
+
+.main-e h1 {
+    font-size: 40px;
     font-weight: 500;
 }
-.main-e p{
+
+.main-e p {
     font-size: 20px;
+    line-height: 1.5rem;
 }
-.empbtn{
+
+/* Style for the empbtn button */
+.empbtn {
     background-color: #000000;
     color: #ffffff;
     border: none;
@@ -34,23 +48,71 @@
     font-size: 20px;
     border: solid black 2px;
 }
-.empbtn:hover{
+
+.empbtn:hover {
     background-color: white;
     color: #000;
     border: solid white 2px;
 }
-@media (max-width: 768px){
-    .insert{
-       left: -50px;
+
+/* Responsive design: Adjusts layout for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .main-emp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
     }
-    .main-e h1{
-        font-size: 30px;
-        font-weight: 500;
-        
+    .insert {
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin-bottom: 20px;
     }
-    .main-emp{
-        padding: 50px;
-        margin: 50px;
+    .main-e {
+        width: 100%;
         text-align: center;
+    }
+}
+
+/* Responsive design: Adjusts layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-emp {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        width: 90%; /* Adjusting width for smaller screens */
+        border-radius: 40px;
+        margin-top: 20px;
+    }
+    .insert {
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .main-e h1 {
+        font-size: 30px;
+    }
+    .main-e p {
+        font-size: 18px;
+    }
+    
+}
+/* Responsive design: Adjusts layout for screens smaller than 480px */
+@media (max-width: 480px) {
+    .main-emp {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .main-e h1 {
+        font-size: 24px;
+    }
+    .main-e p {
+        font-size: 16px;
+    }
+    .empbtn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
     }
 }
