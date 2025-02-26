@@ -148,7 +148,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
-    width: 100%;
+
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensure the menu is on top */
@@ -158,22 +158,20 @@
     align-items: center;
     justify-content: center;
   }
-  .navbar-links-container.open a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 150px;
-    text-align: center;
-  }
+
   .navbar-links {
     flex-direction: column;
   }
   .navbar-links li {
+    position: relative;
+    right: 90px;
     margin: 10px 0;
+    margin-right: 50px;
   }
   .contact-button {
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 0;
+    width: 100px;
   }
 }
 

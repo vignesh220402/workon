@@ -17,27 +17,30 @@
     justify-content: center;
     align-items: center;
     margin: 60px;
-    margin-left: -5px;
+    margin-left: auto; /* Centering the topic */
+    margin-right: auto; /* Centering the topic */
     margin-top: 150px;
+    text-align: center; /* Center-aligning text */
 }
 
 .topic h1 {
     font-size: 70px;
     margin-left: 20px;
     font-weight: 530;
-    width: 400px;
+    width: 100%; /* Ensuring the heading takes full width */
 }
 
 .topic p {
     font-size: 20px;
     margin-left: 5px;
     letter-spacing: 1px;
+    width: 100%; /* Ensuring the paragraph takes full width */
 }
 
 /* Style for the case study sections */
 .case-study-section {
     width: 310px;
-    height: 100px;
+    height: auto; /* Allowing height to adjust based on content */
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -85,22 +88,52 @@
         align-items: center;
         text-align: center;
         margin: 20px;
-        width: 85%; /* Adjusting width for smaller screens */
+        width: 87%; /* Adjusting width for smaller screens */
         padding: 30px;
         border-radius: 20px;
     }
 
     .case-study-section {
-        width: 100%;
+        width: 90%;
         max-width: 350px;
         text-align: center;
     }
-    .c-line {
-        width: 0;
-        height: 0;
+
+    .case-study-section p {
+        margin-right: 0; /* Center-aligning text */
+        font-weight: 100;
+        font-size: 15px;
     }
+
+    .c-line {
+        display: none; /* Hiding the line on smaller screens */
+    }
+
     .topic {
         flex-wrap: wrap;
         text-align: center;
+    }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 600px) {
+    .topic h1 {
+        font-size: 50px;
+    }
+
+    .topic p {
+        font-size: 16px;
+    }
+
+    .case-study {
+        padding: 20px;
+    }
+
+    .case-study-section p {
+        font-size: 14px;
+    }
+
+    .case-study-section a {
+        font-size: 14px;
     }
 }

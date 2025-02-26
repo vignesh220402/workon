@@ -43,10 +43,10 @@
 }
 
 .intro-image img {
-  height: 420px;
-  width: 560px;
+  height: 450px;
+  width: 590px;
   margin-top: 100px;
-  margin-left: -20px;
+  margin-left: -9.5px;
 }
 
 .logos {
@@ -72,6 +72,8 @@
 .intro-text {
   max-width: 45%;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 
 
 }
@@ -84,6 +86,7 @@
   font-size: 19px;
   letter-spacing: 0.2px;
   width: 628px;
+  flex-wrap: wrap;
   line-height: 1.6;
   /* Adjust line height for spacing between lines */
 }
@@ -132,20 +135,29 @@
     justify-content: center;
     align-items: center;
   }
-
+  .contacthome {
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .intro-text h1 {
     font-size: 25px;
     text-align: center;
     margin-top: 50px;
     line-height: 1.2;
+    margin-left: -50px;
     /* Adjust line height for smaller screens */
   }
 
   .intro-text p {
+    display: flex;
     text-align: center;
-    width: auto;
-    line-height: 1.6;
-    /* Adjust line height for smaller screens */
+    width: 400px;
+    margin-left: -50px;
+   
+    /* Adjust line height for spacing between lines */
   }
 
   .main-intro {
@@ -162,6 +174,7 @@
   .logos {
     flex-wrap: wrap;
     flex-direction: column;
+    margin-right: 90px;
   }
 
   .logos img {

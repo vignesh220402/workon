@@ -40,13 +40,11 @@ const Navbar = () => {
             <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
           </ul>
           <Link to="/contact" className="contact-button" onClick={closeMenu}>Contact Us</Link>
- {/* Cancel button */}
         </div>
+
       </nav>
     </div>
   );
 };
 
 export default Navbar;
-
-
